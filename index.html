@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather-app</title>
+</head>
+
+<body onload="realtimeClock()">
+    <div class="app-wrap">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+        </header>
+
+        <main>
+            <section class="location">
+                <div class="city"></div>
+                <div class="date"></div>
+            </section>
+
+            <div class="current">
+                <div class="temp"><span></span></div>
+                <div class="weather"><i class='bx bx-cloud'></i></div>
+                <div class="hi-low"></div>
+            </div>
+            <!-- ======================== REALTIME CLOCK ============================ -->
+            <h1>Time in UA</h1>
+            <div id="clock"></div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
